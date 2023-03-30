@@ -1,0 +1,119 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`splitToLists > allows removal of a middle list 1`] = `
+{
+  "1": [
+    {
+      "description": "Geese  can fly",
+      "id": 1,
+      "listId": 1,
+      "name": "first",
+      "order": 1,
+    },
+  ],
+  "3": [
+    {
+      "description": "Nom Nom",
+      "id": 2,
+      "listId": 3,
+      "name": "second",
+      "order": 2,
+    },
+    {
+      "description": "Sugar cubes",
+      "id": 3,
+      "listId": 3,
+      "name": "third",
+      "order": 3,
+    },
+  ],
+}
+`;
+
+exports[`splitToLists > can allow all items in second list 1`] = `
+{
+  "2": [
+    {
+      "description": "Geese  can fly",
+      "id": 1,
+      "listId": 2,
+      "name": "first",
+      "order": 1,
+    },
+    {
+      "description": "Nom Nom",
+      "id": 2,
+      "listId": 2,
+      "name": "second",
+      "order": 2,
+    },
+    {
+      "description": "Sugar cubes",
+      "id": 3,
+      "listId": 2,
+      "name": "third",
+      "order": 3,
+    },
+  ],
+}
+`;
+
+exports[`splitToLists > can move first item into another list 1`] = `
+{
+  "1": [
+    {
+      "description": "Sugar cubes",
+      "id": 3,
+      "listId": 1,
+      "name": "third",
+      "order": 3,
+    },
+  ],
+  "2": [
+    {
+      "description": "Geese  can fly",
+      "id": 1,
+      "listId": 2,
+      "name": "first",
+      "order": 1,
+    },
+    {
+      "description": "Nom Nom",
+      "id": 2,
+      "listId": 2,
+      "name": "second",
+      "order": 2,
+    },
+  ],
+}
+`;
+
+exports[`splitToLists > returns split lists 1`] = `
+{
+  "1": [
+    {
+      "description": "Geese  can fly",
+      "id": 1,
+      "listId": 1,
+      "name": "first",
+      "order": 1,
+    },
+    {
+      "description": "Sugar cubes",
+      "id": 3,
+      "listId": 1,
+      "name": "third",
+      "order": 3,
+    },
+  ],
+  "2": [
+    {
+      "description": "Nom Nom",
+      "id": 2,
+      "listId": 2,
+      "name": "second",
+      "order": 2,
+    },
+  ],
+}
+`;

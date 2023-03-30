@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --body: rgba(255, 255, 255, 0.87);
+  --background: hsl(0, 0%, 15%);
+  --background-shade: hsl(0, 0%, 10%);
+
+  --primary: hsl(174deg 100% 25%);
+  --primary-light: hsl(174, 57%, 70%);
+  --primary-shade: hsl(174deg 100% 15%);
+
+  --warn: hsl(23, 93%, 61%);
+
+  color-scheme: light dark;
+  color: var(--body);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  margin: 0 auto;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+header {
+  background-color: var(--primary);
+  padding: 0.5em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  padding: 0.6em 1em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--background);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover,
+button:focus,
+button:focus-visible {
+  background-color: var(--background-shade);
+}
+
+button:focus,
+button:focus-visible {
+  background-color: var(--background-shade);
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  padding: 0.5em;
+  font-family: inherit;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--primary);
+}
